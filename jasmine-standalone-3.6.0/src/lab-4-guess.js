@@ -7,20 +7,19 @@ function guessNum(guess) {
     var returnMessage = "";
     var noNumber = "A number was not input.";
     var noInput = "A value was not entered.";
-    var outOfRange = "Way off! Pick between 1 and 10.";
+    //Missing '!!!'
+    var outOfRange = "Way off!!!! Pick between 1 and 10.";
     var correct = "You guessed it!";
     var validIncorrect = "Guess again.";
 
 //Validate input and assign a return message
     if (isNaN(guess) === true) {
         returnMessage = noNumber;
-        
     } else if (guess === "") {
         returnMessage = noInput;
-        
-    } else if (guess <= 1 || guess >= 10) {
+    //Incorrect syntax for expected range
+    } else if (guess < 1  || guess > 10) {
         returnMessage = outOfRange;
-        
     } else {
         if (parseInt(guess) === secretGuess) {
             returnMessage = correct;
@@ -28,6 +27,5 @@ function guessNum(guess) {
             returnMessage = validIncorrect;
         }
     }
-
     return returnMessage;
 }
