@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Encrypt Your Password</title>
+		<link rel="stylesheet" href="jasmine-standalone-3.6.0/lib/jasmine-3.6.0/jasmine.css">
+		<link rel="shortcut icon" type="image/png" href="jasmine-standalone-3.6.0/lib/jasmine-3.6.0/jasmine_favicon.png">
+		<!--SCRIPTS GO HERE-->
+		<script src="lab-4-guess.js"></script>
+		<script src="lab-4-encrypt.js"></script>
+		<!--Spec Files-->
+		<script src="jasmine-standalone-3.6.0/lib/md5.js"></script>
+	</head>
+<body>
+	<div id="getMD5">
+		<h1>Password Encryption with JavaScript</h1>
+    <form name="sha1form" action="#" method="POST">
+			<fieldset>
+				<legend>Hash your password into MD5</legend>
+
+				<label for="sha1form__txt">Enter your password:</label>
+				<input type="text" id="sha1form__txt" name="sha1form__input"/>
+
+				<br />
+
+				<input type="submit" value="Encrypt!"/>
+			</fieldset>
+		</form>
+
+		<div id="output"></div>
+	</div>
+</body>
+</html>
